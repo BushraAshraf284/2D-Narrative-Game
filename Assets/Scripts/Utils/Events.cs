@@ -16,4 +16,9 @@ public static class Events
     {
         public static Action<bool> OnObstacleDetect;
     }
+    public static class Keypad
+    {
+        public static Action<int> KeyPressed;
+        public static Action CorrectKeyPressed;
+    }
 }
