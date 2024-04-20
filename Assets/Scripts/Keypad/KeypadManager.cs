@@ -89,6 +89,8 @@ public class KeypadManager : MonoBehaviour
             KeypadUI.ChangeColorPasscode(KeypadUI.KeycodeState.IDLE);
             await UniTask.WaitForSeconds(blinkWait);
         }
+        await UniTask.WaitForSeconds(initialWait);
+        Events.Keypad.CorrectKeyPressed?.Invoke();
     }
 
     public void ShowKeyPass()

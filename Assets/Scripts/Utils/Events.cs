@@ -6,4 +6,10 @@ public static class Events
     {
         public static Action<bool> TogglePlayerMovement;
     }
+
+    public static class Keypad
+    {
+        public static Action<int> KeyPressed;
+        public static Action CorrectKeyPressed;
+    }
 }
