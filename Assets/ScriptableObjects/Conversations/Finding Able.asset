@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0159a49bae2044109c5fdc70afdc9bef, type: 3}
+  m_Name: Finding Able
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 11400000, guid: 0ca17f424e2e0a847b13fc97c55bb379, type: 2}
+  - {fileID: 11400000, guid: 3d6a33c21e9621e41abde3fbf7d33a89, type: 2}
+  - {fileID: 11400000, guid: 1fddd89225676874cbcf33251965879b, type: 2}
+  - {fileID: 11400000, guid: e7701c694db26724f91880a48567bead, type: 2}
+  DoesStopPlayerMovement: 0

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7a460c2c87048a0bf5484978f637a0d, type: 3}
+  m_Name: Finding Abel 8
+  m_EditorClassIdentifier: 
+  Talker: {fileID: 11400000, guid: c60a95fc2195bef44b5107d356afb372, type: 2}
+  DialogueText: "No I\u2019m jolly. Get lost again and let\u2019s see how much luck
+    left in you. "
+  Seconds: 0
+  Choices:
+  - ChoiceText: 'Where have you been? '
+    ConversationAfterChoice: {fileID: 0}
+  - ChoiceText: 'A raven? '
+    ConversationAfterChoice: {fileID: 11400000, guid: 20a91781f30104f4d9a378e9aa33197e, type: 2}

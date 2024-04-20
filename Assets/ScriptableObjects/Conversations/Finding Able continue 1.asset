@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0159a49bae2044109c5fdc70afdc9bef, type: 3}
+  m_Name: Finding Able continue 1
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 11400000, guid: f02d7eede005d7742946802847406012, type: 2}
+  - {fileID: 11400000, guid: 759e52c73aa11904f8f7b335f5d31b85, type: 2}
+  - {fileID: 11400000, guid: 1f707f4e0f53fda4791e1411db952cbd, type: 2}
+  - {fileID: 0}
+  DoesStopPlayerMovement: 0
