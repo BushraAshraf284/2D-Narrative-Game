@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
 {
-
     public bool IsInRange;
     public KeyCode interactKey;
     public UnityEvent interactAction;
