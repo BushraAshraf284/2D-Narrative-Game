@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     {
         characterController.OnLandEvent.AddListener(SetJump);
         Events.Player.TogglePlayerMovement += TogglePlayerMovement;
+        Events.ObstacleDetected.OnObstacleDetect += OnObjectMoved;
     }
 
     private void TogglePlayerMovement(bool canMove)
@@ -57,12 +58,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (push)
-        {
-           
-            
+        {                       
             animator.SetBool("isPushing",Math.Abs( horizontalMove)>1f);
-            
-           
         }
 
 
@@ -91,6 +88,13 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("isPushing", false);
     }
 
+    public void OnObjectMoved(bool OBjectMoved)
+    {
+        if(OBjectMoved)
+        {
+            StopPushing();
+        }
+    }
     
 
     private void OnDisable()

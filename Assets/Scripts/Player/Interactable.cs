@@ -44,6 +44,10 @@ public class Interactable : MonoBehaviour
             IsInRange = true;
             Debug.Log("Player In Ramge");
         }
+        if(collision.CompareTag("Obstacle"))
+        {
+            Events.ObstacleDetected.OnObstacleDetect(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -52,6 +56,10 @@ public class Interactable : MonoBehaviour
         {
             IsInRange = false;
             Debug.Log("Player not In Ramge");
+        }
+        if (collision.CompareTag("Obstacle"))
+        {
+            Events.ObstacleDetected.OnObstacleDetect(false);
         }
     }
 

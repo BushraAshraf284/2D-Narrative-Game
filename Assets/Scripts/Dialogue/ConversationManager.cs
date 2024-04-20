@@ -25,6 +25,7 @@ public class ConversationManager : MonoBehaviour
 
     public void StartConversation(Conversation conversation)
     {
+        Events.Conversation.ConversationStateChange?.Invoke(true);
         _currentConversation = conversation;
         if (_currentConversation.DoesStopPlayerMovement)
             Events.Player.TogglePlayerMovement?.Invoke(false);
@@ -55,6 +56,7 @@ public class ConversationManager : MonoBehaviour
 
         if (_currentConversation.DoesStopPlayerMovement)
             Events.Player.TogglePlayerMovement?.Invoke(true);
+        Events.Conversation.ConversationStateChange?.Invoke(false);
 
         CloseDialogueUI();
     }

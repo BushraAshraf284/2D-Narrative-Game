@@ -6,4 +6,14 @@ public static class Events
     {
         public static Action<bool> TogglePlayerMovement;
     }
+
+    public static class Conversation
+    {
+        public static Action<bool> ConversationStateChange;
+    }
+
+    public static class ObstacleDetected
+    {
+        public static Action<bool> OnObstacleDetect;
+    }
 }
