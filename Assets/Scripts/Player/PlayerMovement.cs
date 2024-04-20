@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Start()
     {
-        characterController.OnLandEvent.AddListener(SetJump);
+        
     }
 
     // Update is called once per frame
@@ -44,17 +44,16 @@ public class PlayerMovement : MonoBehaviour
     {
         // Move Character
         characterController.Move(horizontalMove * Time.fixedDeltaTime, false, jump );
-        
+        jump = false;
 
       
 
             
 
-        jump = false;
         
     }
 
-    private void SetJump()
+    public void SetJump()
     {
         animator.SetBool("isJump", false);
     }
