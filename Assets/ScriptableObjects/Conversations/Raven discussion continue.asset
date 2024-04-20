@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Raven discussion continue
   m_EditorClassIdentifier: 
   Dialogues:
-  - {fileID: 11400000, guid: 269e0b926b5ad5b469522608043d8286, type: 2}
-  - {fileID: 11400000, guid: a088fbf6de0b40340a7e99b08e6778d4, type: 2}
-  - {fileID: 11400000, guid: e40c84cbe215e9341a73bceb36889725, type: 2}
+  - {fileID: 11400000, guid: 9841eac213e05454a9d05ce63c71afa7, type: 2}
+  - {fileID: 11400000, guid: f10640900734d6348ac1005c7aa968ff, type: 2}
+  - {fileID: 11400000, guid: 9f1db81a7c94cac46b5e4fb22d7bf5f2, type: 2}
+  - {fileID: 11400000, guid: 2aa39a085b197b84fa92c45808eaed15, type: 2}
+  - {fileID: 11400000, guid: db8938f292fb91a4d8b13106aaf99598, type: 2}
   DoesStopPlayerMovement: 0

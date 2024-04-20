@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34cebddef6524f7e899fc77d5f87e8a3, type: 3}
   m_Name: Cain
   m_EditorClassIdentifier: 
-  CharacterSprite: {fileID: 0}
+  CharacterSprite: {fileID: 21300000, guid: 2811359ba72962243bb0446150596c27, type: 3}
   CharacterName: Cain

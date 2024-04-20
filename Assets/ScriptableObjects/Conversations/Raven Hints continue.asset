@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0159a49bae2044109c5fdc70afdc9bef, type: 3}
+  m_Name: Raven Hints continue
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 11400000, guid: d68d71ca5c1f0f840ae05600b34ee040, type: 2}
+  - {fileID: 11400000, guid: 9bb39923a62311148a10b8392cbb6b87, type: 2}
+  - {fileID: 11400000, guid: cdd64e9666e4edd43b5efcd571b3307f, type: 2}
+  - {fileID: 11400000, guid: 5e2b6eb98ddaade4185aac6297af3347, type: 2}
+  - {fileID: 11400000, guid: b04909d40519fe1498253d124b9ab22b, type: 2}
+  - {fileID: 11400000, guid: af53e7536028f714ba17b4bc64edbc5a, type: 2}
+  DoesStopPlayerMovement: 0
