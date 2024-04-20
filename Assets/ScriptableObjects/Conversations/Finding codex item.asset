@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0159a49bae2044109c5fdc70afdc9bef, type: 3}
+  m_Name: Finding codex item
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 11400000, guid: ec105c7c701e75749a7352f8cb465e14, type: 2}
+  DoesStopPlayerMovement: 0

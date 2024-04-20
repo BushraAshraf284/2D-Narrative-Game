@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7a460c2c87048a0bf5484978f637a0d, type: 3}
+  m_Name: Finfing codex item 1
+  m_EditorClassIdentifier: 
+  Talker: {fileID: 11400000, guid: c60a95fc2195bef44b5107d356afb372, type: 2}
+  DialogueText: What is it ?
+  Seconds: 0
+  Choices:
+  - ChoiceText: 'A manifesto of some sorts '
+    ConversationAfterChoice: {fileID: 11400000, guid: 3e5201835dab29d40a7483b582a729d6, type: 2}
+  - ChoiceText: "Egg, Bacon,Milk\u2026"
+    ConversationAfterChoice: {fileID: 0}

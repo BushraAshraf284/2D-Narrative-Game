@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0159a49bae2044109c5fdc70afdc9bef, type: 3}
+  m_Name: ChiChat 1
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - {fileID: 11400000, guid: f66d806f6ecdd8b47a6a7eb354cefe3f, type: 2}
+  - {fileID: 11400000, guid: 01917f270d06fd349a8e908994782a7b, type: 2}
+  - {fileID: 11400000, guid: 39948d54dd4eb944db4d5907eec8c981, type: 2}
+  - {fileID: 11400000, guid: e3f57f8f8e2ca9048babea6defe1fb60, type: 2}
+  - {fileID: 11400000, guid: 0771442fe98d0fe47af012afa7f5641d, type: 2}
