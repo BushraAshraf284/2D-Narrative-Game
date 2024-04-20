@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2944800742583127668}
   - component: {fileID: 2944800742583127671}
   - component: {fileID: -4573988416764181383}
+  - component: {fileID: 7921749139398840378}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2944800742583127670}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.8384795, y: -0.9195303, z: -0.14208923}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -47,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueUI: {fileID: 0}
   TextSpeed: 0
-  CharacterTalker: {fileID: 0}
+  CharacterTalker: {fileID: 11400000, guid: 4d190adb7117a44839c87c91f7ef6b65, type: 2}
   DebugConversation: {fileID: 11400000, guid: d178b66939321411f825e60688e941f8, type: 2}
 --- !u!114 &-4573988416764181383
 MonoBehaviour:
@@ -63,3 +64,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CorrectPasskey: 6917
   KeypadUI: {fileID: 0}
+--- !u!114 &7921749139398840378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944800742583127670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d388d3c77cfe407c855319ce062e5f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JournalUI: {fileID: 0}
+  JournalLogs:
+  - {fileID: 11400000, guid: 7b872a2eca3824a998592ab4fb112ad1, type: 2}
+  - {fileID: 11400000, guid: 2b16f445cdb4f4a42a42100078b91485, type: 2}
+  - {fileID: 11400000, guid: 3bc3479efaa0e4916bec4f2d70fe3c12, type: 2}

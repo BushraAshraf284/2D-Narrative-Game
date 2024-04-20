@@ -2,17 +2,26 @@ using System;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-public class KeypadManager : MonoBehaviour
+public class KeypadManager : Triggerable
 {
     [SerializeField] private string CorrectPasskey;
     [SerializeField] private KeypadUI KeypadUI;
     private int[] _writtenPasscode;
     private int _currentIndex;
     private bool _passwordAnimating;
+    public override bool IsTriggerOnGoing { get; set; }
 
     private void Awake()
     {
         ResetPassCode();
+    }
+
+    private void Update()
+    {
+        if (!IsTriggerOnGoing)
+            return;
+        if (Input.GetKeyDown(KeyCode.Escape))
+            DisableKeyPass();
     }
 
     private void ResetPassCode()
@@ -102,6 +111,7 @@ public class KeypadManager : MonoBehaviour
     public void DisableKeyPass()
     {
         KeypadUI.gameObject.SetActive(false);
+        IsTriggerOnGoing = false;
     }
 
     private void OnEnable()
@@ -112,5 +122,11 @@ public class KeypadManager : MonoBehaviour
     private void OnDisable()
     {
         Events.Keypad.KeyPressed -= KeyPressed;
+    }
+
+    public override void OnTriggered()
+    {
+        ShowKeyPass();
+        IsTriggerOnGoing = true;
     }
 }
