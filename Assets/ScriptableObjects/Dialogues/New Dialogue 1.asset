@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22a0affce5b1428d981ecf2b14f56e8c, type: 3}
-  m_Name: New Dialogue
+  m_Name: New Dialogue 1
   m_EditorClassIdentifier: 
-  Talker: {fileID: 11400000, guid: 4d190adb7117a44839c87c91f7ef6b65, type: 2}
-  DialogueText: Dialogue 1
+  Talker: {fileID: 11400000, guid: b4836cc0a4edd42bcb5430019e99ba9d, type: 2}
+  DialogueText: Dialogue 2
   Seconds: 2

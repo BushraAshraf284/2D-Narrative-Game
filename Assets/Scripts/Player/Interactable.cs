@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class Interactable : MonoBehaviour
 {
     public bool IsInRange;
-    public KeyCode interactKey;
     public UnityEvent interactAction;
 
 
@@ -15,7 +14,7 @@ public class Interactable : MonoBehaviour
     {
         if (IsInRange)
         {
-            if (Input.GetKeyDown(interactKey))
+            if (Input.GetKeyDown(Constants.InteractKey))
             {
                 interactAction.Invoke();
             }
