@@ -5,4 +5,5 @@ using UnityEngine;
 public class Conversation : ScriptableObject
 {
     public Dialogue[] Dialogues;
+    public bool DoesStopPlayerMovement;
 }

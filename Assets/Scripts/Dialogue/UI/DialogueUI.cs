@@ -9,6 +9,8 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private TMP_Text DialogueText;
     [SerializeField] private TMP_Text TalkerName;
     [SerializeField] private Image TalkerImage;
+    [SerializeField] private ChoiceUI[] ChoiceUis;
+    [SerializeField] private RectTransform TalkerBox;
 
 
     public void Open()
@@ -34,5 +36,37 @@ public class DialogueUI : MonoBehaviour
     public void SetTalkerImage(Sprite sprite)
     {
         TalkerImage.sprite = sprite;
+    }
+
+    public void SetIfTalkingIsUs(bool isTalkingUs)
+    {
+        var pos = TalkerBox.localPosition;
+        pos.x = isTalkingUs ? -Mathf.Abs(pos.x) : Mathf.Abs(pos.x);
+        TalkerBox.localPosition = pos;
+    }
+
+    public void AssignChoices(DialogueWithChoices dialogueWithChoices)
+    {
+        CloseChoices();
+        for (var i = 0; i < dialogueWithChoices.Choices.Length; i++)
+        {
+            var choice = dialogueWithChoices.Choices[i];
+            var choiceUI = ChoiceUis[i];
+            choiceUI.ToggleShown(true);
+            choiceUI.SetChoiceText(choice.ChoiceText);
+        }
+    }
+
+    public void CloseChoices()
+    {
+        foreach (var choiceUi in ChoiceUis)
+            choiceUi.ToggleShown(false);
+    }
+
+    public void SelectChoice(int index)
+    {
+        foreach (var choiceUi in ChoiceUis)
+            choiceUi.ToggleSelected(false);
+        ChoiceUis[index].ToggleSelected(true);
     }
 }
