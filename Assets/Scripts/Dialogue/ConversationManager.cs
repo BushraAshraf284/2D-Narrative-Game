@@ -40,7 +40,7 @@ public class ConversationManager : MonoBehaviour
             );
         }
 
-        Debug.Log($"Conversation Finished");
+        CloseDialogueUI();
     }
 
     private void AssignDialogue(Dialogue dialogue)

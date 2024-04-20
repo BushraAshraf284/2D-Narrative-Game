@@ -13,12 +13,12 @@ public class DialogueUI : MonoBehaviour
 
     public void Open()
     {
-        CanvasGroup.alpha = 1f;
+        DOTween.To((() => CanvasGroup.alpha), val => CanvasGroup.alpha = val, 1f, 0.2f);
     }
 
     public void Close()
     {
-        CanvasGroup.alpha = 0f;
+        DOTween.To((() => CanvasGroup.alpha), val => CanvasGroup.alpha = val, 0f, 0.2f);
     }
 
     public void SetDialogueText(string text)
