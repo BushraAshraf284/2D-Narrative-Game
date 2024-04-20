@@ -20,19 +20,34 @@ public class PlayerMovement : MonoBehaviour
     //Other References
     private CharacterController2D characterController;
     private Animator animator;
+    private bool _canPlayerMove;
+
     private void Awake()
     {
         characterController = GetComponent<CharacterController2D>();
         animator = GetComponent<Animator>();
+        _canPlayerMove = true;
     }
     void Start()
     {
-        
+        characterController.OnLandEvent.AddListener(SetJump);
+        Events.Player.TogglePlayerMovement += TogglePlayerMovement;
+    }
+
+    private void TogglePlayerMovement(bool canMove)
+    {
+        _canPlayerMove = canMove;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!_canPlayerMove)
+        {
+            horizontalMove = 0f;
+            animator.SetFloat("Speed", Math.Abs(horizontalMove));
+            return;
+        }
         horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
         animator.SetFloat("Speed", Math.Abs(horizontalMove));
         if (Input.GetButtonDown("Jump"))
@@ -77,4 +92,9 @@ public class PlayerMovement : MonoBehaviour
     }
 
     
+
+    private void OnDisable()
+    {
+        Events.Player.TogglePlayerMovement -= TogglePlayerMovement;
+    }
 }
