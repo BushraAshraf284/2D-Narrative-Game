@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2944800742583127668}
   - component: {fileID: 2944800742583127671}
+  - component: {fileID: -4573988416764181383}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -48,3 +49,17 @@ MonoBehaviour:
   TextSpeed: 0
   CharacterTalker: {fileID: 0}
   DebugConversation: {fileID: 11400000, guid: d178b66939321411f825e60688e941f8, type: 2}
+--- !u!114 &-4573988416764181383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944800742583127670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89185ca5fc2240fe83fa3dce622d9eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CorrectPasskey: 6917
+  KeypadUI: {fileID: 0}
