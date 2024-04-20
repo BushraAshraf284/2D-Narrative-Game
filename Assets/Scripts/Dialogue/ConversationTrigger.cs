@@ -9,7 +9,7 @@ public class ConversationTrigger : MonoBehaviour
     {
         if (_isConversationTriggered || other.GetComponent<Player>() == null)
             return;
-        ConversationManager.Instance.StartConversation(Conversation);
         _isConversationTriggered = true;
+        ConversationManager.Instance.StartConversation(Conversation);
     }
 }

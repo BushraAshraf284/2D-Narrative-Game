@@ -24,6 +24,8 @@ public class ConversationManager : MonoBehaviour
     public void StartConversation(Conversation conversation)
     {
         _currentConversation = conversation;
+        if (_currentConversation.DoesStopPlayerMovement)
+            Events.Player.TogglePlayerMovement?.Invoke(false);
         OpenDialogueUI();
         ConversationLoop();
     }
@@ -36,9 +38,12 @@ public class ConversationManager : MonoBehaviour
             AssignDialogue(_currentDialogue);
             await UniTask.WhenAny(
                 UniTask.WaitUntil(() => Input.GetKeyDown(Constants.SkipConversation)),
-                UniTask.Delay(TimeSpan.FromSeconds(_currentDialogue.Seconds))
+                UniTask.WaitForSeconds(_currentDialogue.Seconds)
             );
         }
+
+        if (_currentConversation.DoesStopPlayerMovement)
+            Events.Player.TogglePlayerMovement?.Invoke(true);
 
         CloseDialogueUI();
     }
