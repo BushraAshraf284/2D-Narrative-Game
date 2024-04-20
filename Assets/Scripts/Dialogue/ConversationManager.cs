@@ -35,7 +35,7 @@ public class ConversationManager : MonoBehaviour
             _currentDialogue = _currentConversation.Dialogues[i];
             AssignDialogue(_currentDialogue);
             await UniTask.WhenAny(
-                UniTask.WaitUntil(() => Input.GetKeyDown(Constants.InteractKey)),
+                UniTask.WaitUntil(() => Input.GetKeyDown(Constants.SkipConversation)),
                 UniTask.Delay(TimeSpan.FromSeconds(_currentDialogue.Seconds))
             );
         }
