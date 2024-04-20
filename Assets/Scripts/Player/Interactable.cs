@@ -1,24 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
 {
     public bool IsInRange;
+    public bool requireInteractKey;
     public UnityEvent interactAction;
-
+    public UnityEvent resetInteractAction;
+    private Vector2 relativePoint;
+    private Transform player;
 
     // Update is called once per frame
     void Update()
     {
         if (IsInRange)
         {
-            if (Input.GetKeyDown(Constants.InteractKey))
+            if (requireInteractKey)
+            {
+                if (Input.GetKeyDown(Constants.InteractKey))
+                {
+                    interactAction.Invoke();
+                }
+            }
+            else
             {
                 interactAction.Invoke();
             }
+              
         }
+        else { resetInteractAction.Invoke(); }
 
     }
 
@@ -26,6 +40,7 @@ public class Interactable : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            player = collision.gameObject.transform;
             IsInRange = true;
             Debug.Log("Player In Ramge");
         }
@@ -39,4 +54,12 @@ public class Interactable : MonoBehaviour
             Debug.Log("Player not In Ramge");
         }
     }
+
+   
+}
+
+public enum ObjectTypes
+{
+    PUSHABLE,
+    INTERACTABLE
 }

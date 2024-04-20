@@ -2,15 +2,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
    
     public float runSpeed = 40f;
-
+    public UnityEvent AnimatePush;
     //private variables
     private float horizontalMove;
     private bool jump;
+    private bool push;
+    private Vector2 relativePoint;
+    private Transform Object;
+    private bool right;
 
     //Other References
     private CharacterController2D characterController;
@@ -35,7 +40,15 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
             animator.SetBool("isJump", true);
         }
+
+        if (push)
+        {
            
+            
+            animator.SetBool("isPushing",Math.Abs( horizontalMove)>1f);
+            
+           
+        }
 
 
     }
@@ -45,11 +58,6 @@ public class PlayerMovement : MonoBehaviour
         // Move Character
         characterController.Move(horizontalMove * Time.fixedDeltaTime, false, jump );
         jump = false;
-
-      
-
-            
-
         
     }
 
@@ -57,4 +65,16 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetBool("isJump", false);
     }
+    public void StartPushing()
+    {
+        push = true;
+        
+    }
+    public void StopPushing()
+    {
+        push = false;
+        animator.SetBool("isPushing", false);
+    }
+
+    
 }

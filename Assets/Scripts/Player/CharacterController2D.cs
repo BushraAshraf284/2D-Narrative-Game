@@ -58,7 +58,6 @@ public class CharacterController2D : MonoBehaviour
 					OnLandEvent.Invoke();
 			}
 		}
-		Debug.Log("colliders:"+ colliders.Length);
 	}
 
 
