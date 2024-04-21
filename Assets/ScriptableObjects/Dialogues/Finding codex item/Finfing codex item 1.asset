@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Talker: {fileID: 11400000, guid: c60a95fc2195bef44b5107d356afb372, type: 2}
   DialogueText: What is it ?
-  Seconds: 1
+  Seconds: 5
   Choices:
   - ChoiceText: "Egg, Bacon,Milk\u2026"
     ConversationAfterChoice: {fileID: 11400000, guid: 3e5201835dab29d40a7483b582a729d6, type: 2}

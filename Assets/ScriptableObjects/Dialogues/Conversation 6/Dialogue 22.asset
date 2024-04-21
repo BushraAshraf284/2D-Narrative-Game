@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Talker: {fileID: 11400000, guid: c60a95fc2195bef44b5107d356afb372, type: 2}
   DialogueText: And of course we had to loose Able
-  Seconds: 1
+  Seconds: 5
   Choices:
   - ChoiceText: 'You were supposed to keep an eye out. '
     ConversationAfterChoice: {fileID: 11400000, guid: 31289af145cb2254f83631e9cf02185d, type: 2}

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Talker: {fileID: 11400000, guid: c60a95fc2195bef44b5107d356afb372, type: 2}
   DialogueText: Abel hush your bird
-  Seconds: 1.5
+  Seconds: 5

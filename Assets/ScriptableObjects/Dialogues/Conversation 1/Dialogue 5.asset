@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Talker: {fileID: 11400000, guid: 4d190adb7117a44839c87c91f7ef6b65, type: 2}
   DialogueText: "Cut it! You set the camp and\u2026 where is Able?"
-  Seconds: 3
+  Seconds: 5

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Talker: {fileID: 11400000, guid: c60a95fc2195bef44b5107d356afb372, type: 2}
   DialogueText: "Great. I\u2019ll just kill him when we found him. "
-  Seconds: 1
+  Seconds: 5

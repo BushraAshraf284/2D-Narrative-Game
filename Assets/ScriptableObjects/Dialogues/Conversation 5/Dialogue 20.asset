@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Talker: {fileID: 11400000, guid: c60a95fc2195bef44b5107d356afb372, type: 2}
   DialogueText: "So\u2026 what went wrong?"
-  Seconds: 1
+  Seconds: 5
   Choices:
   - ChoiceText: 'The Ship? '
     ConversationAfterChoice: {fileID: 11400000, guid: 3c199201f54c26044bd00f15d8b75235, type: 2}

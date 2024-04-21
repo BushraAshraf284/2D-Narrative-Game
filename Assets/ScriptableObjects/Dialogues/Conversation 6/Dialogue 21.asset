@@ -15,4 +15,4 @@ MonoBehaviour:
   Talker: {fileID: 11400000, guid: 4d190adb7117a44839c87c91f7ef6b65, type: 2}
   DialogueText: "\u2018With the Ship? I don\u2019t know, \u2018mechanical genius\u2019.
     You saw the engine, it worked perfectly. Some-thing here might be jamming it."
-  Seconds: 1.5
+  Seconds: 5
