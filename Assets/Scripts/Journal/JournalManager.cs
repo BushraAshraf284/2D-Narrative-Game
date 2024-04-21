@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -6,6 +7,16 @@ public class JournalManager : MonoBehaviour
 {
     [SerializeField] private JournalUI JournalUI;
     [SerializeField] private JournalLog[] JournalLogs;
+    private List<JournalLog> _unlockedLogs = new();
+
+    private void Awake()
+    {
+        foreach (var log in JournalLogs)
+        {
+            if (log.IsUnlocked)
+                _unlockedLogs.Add(log);
+        }
+    }
 
     private void Update()
     {
@@ -18,18 +29,12 @@ public class JournalManager : MonoBehaviour
 
     private JournalLog[] GetUnlockedLogs()
     {
-        return JournalLogs.Where(jl => jl.IsUnlocked).ToArray();
+        return _unlockedLogs.ToArray();
     }
 
     public void UnlockLog(JournalLog journalLog)
     {
-        foreach (var log in JournalLogs)
-        {
-            if (log == journalLog)
-            {
-                log.IsUnlocked = true;
-                break;
-            }
-        }
+        if (!_unlockedLogs.Contains(journalLog))
+            _unlockedLogs.Add(journalLog);
     }
 }

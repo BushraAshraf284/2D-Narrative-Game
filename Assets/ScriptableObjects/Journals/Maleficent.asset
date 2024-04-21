@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92652e0434844df287053077158ac42e, type: 3}
+  m_Name: Maleficent
+  m_EditorClassIdentifier: 
+  LogName: 'Maleficent  '
+  LogImage: {fileID: 0}
+  IsUnlocked: 0
+  LogContent: "Abel found it squawking near a tree trunk.  (Abel insists on calling
+    it \u2018Maleficent\u2019)  Anyway, this bird struts around like it owns the
+    place, reciting cryptic poems about forgotten dangers and hidden treasures. Abel
+    seems oddly taken with it, understands every word the metal feathered freak spouts.\n\nDon't
+    get me wrong, a talking guide through this labyrinthine museum might be our only
+    saving grace. But seriously, can you imagine explaining this back home? \"Yeah,
+    so we were stranded on a toxic wasteland, and a talking bird helped us find spare
+    spaceship parts.\" They'd probably lock us all up in the \"highly imaginative
+    fiction\" wing of the asylum.\nStill, gotta give credit to the raven.It seems
+    to lead us some where decent to camp. Truly, even to have someone to speak other
+    than these three gave me some clarity.  Maybe this world is not as bad as it
+    seems?\n"

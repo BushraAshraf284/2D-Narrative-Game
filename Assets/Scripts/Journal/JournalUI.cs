@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +7,8 @@ public class JournalUI : MonoBehaviour
     private bool _journalActive;
     [SerializeField] private JournalLogUI[] JournalLogUis;
     [SerializeField] private Image image;
+    [SerializeField] private TMP_Text JournalTMPText;
+
 
     private int _selectedIndex = 0;
     private JournalLog[] _journalLogs;
@@ -37,7 +40,7 @@ public class JournalUI : MonoBehaviour
             journalLogUi.ToggleSelected(false);
         var selectedJournalLogUI = JournalLogUis[_selectedIndex];
         selectedJournalLogUI.ToggleSelected(true);
-        selectedJournalLogUI.ActivateJournal(image);
+        selectedJournalLogUI.ActivateJournal(image,JournalTMPText);
     }
 
     public void OpenJournal()
