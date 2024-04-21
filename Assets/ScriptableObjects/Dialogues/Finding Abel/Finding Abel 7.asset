@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Talker: {fileID: 11400000, guid: b4836cc0a4edd42bcb5430019e99ba9d, type: 2}
   DialogueText: "Cain\u2026 Are you mad?"
-  Seconds: 1
+  Seconds: 1.5

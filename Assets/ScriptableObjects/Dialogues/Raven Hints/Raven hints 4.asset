@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Talker: {fileID: 11400000, guid: 49fd0ec1293920143b06a194cd180cbc, type: 2}
   DialogueText: A Sneer of cold Command!
-  Seconds: 1
+  Seconds: 1.5
