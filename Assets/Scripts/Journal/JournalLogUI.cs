@@ -6,6 +6,7 @@ public class JournalLogUI : MonoBehaviour
 {
     [SerializeField] private TMP_Text JournalTitle;
     [SerializeField] private Image Image;
+    [SerializeField] private Sprite DefaultJournalImage;
     private JournalLog _journalLog;
     [SerializeField] private Color SelectedColor;
 
@@ -23,14 +24,19 @@ public class JournalLogUI : MonoBehaviour
     {
         _journalLog = journalLog;
     }
-    
+
     public void SetJournalUI()
     {
         JournalTitle.text = _journalLog.LogName;
     }
 
-    public void ActivateJournal(Image image)
+    public void ActivateJournal(Image image, TMP_Text tmpText)
     {
-        image.sprite = _journalLog.LogContent;
+        if (_journalLog.LogImage != null)
+            image.sprite = _journalLog.LogImage;
+        else
+            image.sprite = DefaultJournalImage;
+        if (_journalLog.LogContent != "")
+            tmpText.text = _journalLog.LogContent;
     }
 }
