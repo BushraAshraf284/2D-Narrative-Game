@@ -38,5 +38,7 @@ public class JournalLogUI : MonoBehaviour
             image.sprite = DefaultJournalImage;
         if (_journalLog.LogContent != "")
             tmpText.text = _journalLog.LogContent;
+        else
+            tmpText.text = "";
     }
 }
