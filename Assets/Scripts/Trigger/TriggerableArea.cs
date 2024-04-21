@@ -25,8 +25,6 @@ public class TriggerableArea : MonoBehaviour
             return;
         if (!Input.GetKeyDown(_keyCode))
             return;
-        if (other.GetComponent<Player>() == null)
-            return;
         if (Triggerable.IsTriggerOnGoing)
             return;
         Triggerable.OnTriggered();
