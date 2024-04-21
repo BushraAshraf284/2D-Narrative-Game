@@ -16,5 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f02d7eede005d7742946802847406012, type: 2}
   - {fileID: 11400000, guid: 759e52c73aa11904f8f7b335f5d31b85, type: 2}
   - {fileID: 11400000, guid: 1f707f4e0f53fda4791e1411db952cbd, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 82459e8c6945a624988d5ca2adfa7629, type: 2}
   DoesStopPlayerMovement: 0

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Talker: {fileID: 11400000, guid: c60a95fc2195bef44b5107d356afb372, type: 2}
   DialogueText: What is it ?
-  Seconds: 0
+  Seconds: 1
   Choices:
-  - ChoiceText: 'A manifesto of some sorts '
-    ConversationAfterChoice: {fileID: 11400000, guid: 3e5201835dab29d40a7483b582a729d6, type: 2}
   - ChoiceText: "Egg, Bacon,Milk\u2026"
-    ConversationAfterChoice: {fileID: 0}
+    ConversationAfterChoice: {fileID: 11400000, guid: 3e5201835dab29d40a7483b582a729d6, type: 2}
+  - ChoiceText: 'A manifesto of some sorts '
+    ConversationAfterChoice: {fileID: 11400000, guid: bd6337fffaabcc54f8cf7dd8f6d9de6f, type: 2}

@@ -17,6 +17,6 @@ MonoBehaviour:
   Seconds: 1
   Choices:
   - ChoiceText: 'The Ship? '
-    ConversationAfterChoice: {fileID: 11400000, guid: b59fa12a1bb7ec5489a88c6571d47cfd, type: 2}
-  - ChoiceText: 'Able? '
     ConversationAfterChoice: {fileID: 11400000, guid: 3c199201f54c26044bd00f15d8b75235, type: 2}
+  - ChoiceText: 'Able? '
+    ConversationAfterChoice: {fileID: 11400000, guid: b59fa12a1bb7ec5489a88c6571d47cfd, type: 2}

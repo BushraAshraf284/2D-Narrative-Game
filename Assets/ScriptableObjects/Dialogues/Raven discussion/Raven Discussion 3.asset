@@ -17,6 +17,6 @@ MonoBehaviour:
   Seconds: 0
   Choices:
   - ChoiceText: 'What he said '
-    ConversationAfterChoice: {fileID: 0}
-  - ChoiceText: "Can\u2019t see the harm?"
     ConversationAfterChoice: {fileID: 11400000, guid: dc02ddefc4b6d2b4f8aadc6970e6320d, type: 2}
+  - ChoiceText: "Can\u2019t see the harm?"
+    ConversationAfterChoice: {fileID: 11400000, guid: 20a91781f30104f4d9a378e9aa33197e, type: 2}

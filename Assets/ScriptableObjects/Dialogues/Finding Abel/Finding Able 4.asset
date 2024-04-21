@@ -17,6 +17,6 @@ MonoBehaviour:
   Seconds: 0
   Choices:
   - ChoiceText: 'Able are you alright? '
-    ConversationAfterChoice: {fileID: 11400000, guid: c0e447d9b8b153d438a2deb7792f5499, type: 2}
+    ConversationAfterChoice: {fileID: 11400000, guid: 6140dd40b3ed33b4799e38da57b8a090, type: 2}
   - ChoiceText: You better explain yourself
-    ConversationAfterChoice: {fileID: 0}
+    ConversationAfterChoice: {fileID: 11400000, guid: c0e447d9b8b153d438a2deb7792f5499, type: 2}

@@ -18,6 +18,6 @@ MonoBehaviour:
   Seconds: 0
   Choices:
   - ChoiceText: 'Where have you been? '
-    ConversationAfterChoice: {fileID: 0}
-  - ChoiceText: 'A raven? '
     ConversationAfterChoice: {fileID: 11400000, guid: 20a91781f30104f4d9a378e9aa33197e, type: 2}
+  - ChoiceText: 'A raven? '
+    ConversationAfterChoice: {fileID: 11400000, guid: c0e447d9b8b153d438a2deb7792f5499, type: 2}
