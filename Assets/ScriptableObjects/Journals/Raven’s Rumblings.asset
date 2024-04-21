@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92652e0434844df287053077158ac42e, type: 3}
+  m_Name: "Raven\u2019s Rumblings"
+  m_EditorClassIdentifier: 
+  LogName: "Raven\u2019s Rumblings"
+  LogImage: {fileID: 0}
+  IsUnlocked: 0
+  LogContent: "The raven is getting weirder. It keeps going on about  cryptic pronouncements
+    about \"echoes of forgotten wars\" and \"treasures shrouded in dust.\u201D \n\nRecently
+    it stuck on \u2018Shattered\u2019, \u2018Command\u2019 and \u2018King\u2019.
+    \n\nTruth be told, a talking raven spouting poetry is starting to seem less crazy
+    compared to the rest of this situation.  Who knows, maybe these poems are the
+    key to navigating to shelter and getting ourselves out of here. \n\n One thing's
+    for sure, I'm writing them all down.  Maybe back home, someone can decipher this
+    avian Shakespeare and make sense of it all.\n"
