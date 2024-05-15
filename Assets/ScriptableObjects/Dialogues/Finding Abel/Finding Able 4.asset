@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Finding Able 4
   m_EditorClassIdentifier: 
   Talker: {fileID: 11400000, guid: 49fd0ec1293920143b06a194cd180cbc, type: 2}
-  DialogueText: Lo!  A stir is in the air!
+  DialogueText: Command, Shattered, Kings
   Seconds: 0
   Choices:
   - ChoiceText: 'Able are you alright? '

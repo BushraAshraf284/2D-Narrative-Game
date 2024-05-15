@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Finding Abel 6
   m_EditorClassIdentifier: 
   Talker: {fileID: 11400000, guid: 49fd0ec1293920143b06a194cd180cbc, type: 2}
-  DialogueText: "\u2018There shrines and palaces and towers\u2026\u2019"
+  DialogueText: 'Lo! A stir is in the air!
+
+'
   Seconds: 5

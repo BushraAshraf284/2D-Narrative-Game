@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Raven discussion 7
   m_EditorClassIdentifier: 
   Talker: {fileID: 11400000, guid: 49fd0ec1293920143b06a194cd180cbc, type: 2}
-  DialogueText: "\u2019 Half sunk, A shattered visage lies!\u2019"
+  DialogueText: Command, Shattered, Kings
   Seconds: 5
