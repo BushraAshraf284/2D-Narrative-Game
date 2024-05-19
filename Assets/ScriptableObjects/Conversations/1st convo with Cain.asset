@@ -20,3 +20,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 587b42cd844acc145ace885cdace21a4, type: 2}
   - {fileID: 11400000, guid: df318107b2206cb48b8eb1f8cae6658c, type: 2}
   - {fileID: 11400000, guid: c9444177d59701d479c43fae50f0d455, type: 2}
+  DoesStopPlayerMovement: 1
