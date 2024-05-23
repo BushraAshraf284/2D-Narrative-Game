@@ -54,6 +54,7 @@ public class ConversationManager : MonoBehaviour
         if (_currentDialogue is DialogueWithChoices)
             return;
 
+        
         if (_currentConversation.DoesStopPlayerMovement)
             Events.Player.TogglePlayerMovement?.Invoke(true);
         Events.Conversation.ConversationStateChange?.Invoke(false);
@@ -124,6 +125,7 @@ public class ConversationManager : MonoBehaviour
     private void CloseDialogueUI()
     {
         DialogueUI.Close();
+        Events.Player.TogglePlayerMovement?.Invoke(true);
     }
 
 

@@ -15,4 +15,4 @@ MonoBehaviour:
   Dialogues:
   - {fileID: 11400000, guid: 2702ce8f2592abc488b8d7b291c9aa1a, type: 2}
   - {fileID: 11400000, guid: 7b94094cfb242954589c45e53099d705, type: 2}
-  DoesStopPlayerMovement: 0
+  DoesStopPlayerMovement: 1
