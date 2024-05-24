@@ -6,6 +6,7 @@ public class KeypadManager : Triggerable
 {
     [SerializeField] private string CorrectPasskey;
     [SerializeField] private KeypadUI KeypadUI;
+   
     private int[] _writtenPasscode;
     private int _currentIndex;
     private bool _passwordAnimating;
@@ -126,6 +127,7 @@ public class KeypadManager : Triggerable
 
     public override void OnTriggered()
     {
+        
         ShowKeyPass();
         IsTriggerOnGoing = true;
     }

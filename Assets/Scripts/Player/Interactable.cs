@@ -42,7 +42,7 @@ public class Interactable : MonoBehaviour
         {
             player = collision.gameObject.transform;
             IsInRange = true;
-            Debug.Log("Player In Ramge");
+            
         }
         if(collision.CompareTag("Obstacle"))
         {
@@ -55,7 +55,7 @@ public class Interactable : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             IsInRange = false;
-            Debug.Log("Player not In Ramge");
+           
         }
         if (collision.CompareTag("Obstacle"))
         {

@@ -5,13 +5,17 @@ using UnityEngine;
 public class TriggerableArea : MonoBehaviour
 {
     [SerializeField] private Triggerable Triggerable;
+    [SerializeField] private HUDController HUDController;
     [SerializeField] private bool IsKeyCodeRequired;
     [SerializeField, ShowIf(nameof(IsKeyCodeRequired))] private KeyCode _keyCode;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (IsKeyCodeRequired)
+        {
+            HUDController.SetHelpMessage("Press " +  _keyCode.ToString());
             return;
+        }            
         if (other.GetComponent<Player>() == null)
             return;
         if (Triggerable.IsTriggerOnGoing)

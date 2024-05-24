@@ -7,6 +7,7 @@ public class JournalManager : MonoBehaviour
 {
     [SerializeField] private JournalUI JournalUI;
     [SerializeField] private JournalLog[] JournalLogs;
+    [SerializeField] private HUDController HUDController;
     private List<JournalLog> _unlockedLogs = new();
 
     private void Awake()
@@ -22,8 +23,12 @@ public class JournalManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.J))
         {
-            JournalUI.SetJournals(GetUnlockedLogs());
-            JournalUI.OpenJournal();
+            if(_unlockedLogs.Count > 0)
+            {
+                JournalUI.SetJournals(GetUnlockedLogs());
+                JournalUI.OpenJournal();
+            }
+           
         }
     }
 
@@ -34,6 +39,7 @@ public class JournalManager : MonoBehaviour
 
     public void UnlockLog(JournalLog journalLog)
     {
+        HUDController.SetHelpMessage("Press J to see Journal");
         if (!_unlockedLogs.Contains(journalLog))
             _unlockedLogs.Add(journalLog);
     }
