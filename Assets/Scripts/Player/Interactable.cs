@@ -11,29 +11,44 @@ public class Interactable : MonoBehaviour
     public bool requireInteractKey;
     public UnityEvent interactAction;
     public UnityEvent resetInteractAction;
+    public GameObject InteractSign;
     private Vector2 relativePoint;
     private Transform player;
+    bool Interacted = false;
 
     // Update is called once per frame
     void Update()
     {
+        if(Interacted && requireInteractKey) 
+            return;
+        InteractSign.SetActive(IsInRange && requireInteractKey);
         if (IsInRange)
         {
+           
             if (requireInteractKey)
             {
+                Debug.Log("I'm here and supposed to work");
                 if (Input.GetKeyDown(Constants.InteractKey))
                 {
-                    interactAction.Invoke();
+                    Interact();
                 }
             }
             else
             {
-                interactAction.Invoke();
+                Interact();
             }
               
         }
-        else { resetInteractAction.Invoke(); }
+        else resetInteractAction.Invoke();
 
+
+    }
+
+    private void Interact()
+    {
+        InteractSign.SetActive(false);
+        Interacted = true;
+        interactAction.Invoke();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -54,8 +69,8 @@ public class Interactable : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            IsInRange = false;
-           
+                IsInRange = false;
+            resetInteractAction.Invoke();
         }
         if (collision.CompareTag("Obstacle"))
         {

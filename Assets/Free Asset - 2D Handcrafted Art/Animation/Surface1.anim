@@ -3,10 +3,11 @@
 --- !u!74 &7400000
 AnimationClip:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Surface1
-  serializedVersion: 6
+  serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -17,7 +18,8 @@ AnimationClip:
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves:
-  - curve:
+  - serializedVersion: 2
+    curve:
     - time: 0
       value: {fileID: 21300000, guid: 3b837b1f0420fe6458a5c6557b881eab, type: 3}
     - time: 0.05
@@ -139,11 +141,12 @@ AnimationClip:
     - time: 2.95
       value: {fileID: 21300000, guid: b497af2185209314e835d3211753e2e4, type: 3}
     - time: 3
-      value: {fileID: 21300000, guid: 54782e4f62e2ceb42a9023dffb4da36b, type: 3}
+      value: {fileID: 21300000, guid: a9918a9cd1d71d14c9755d09eff10411, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
+    flags: 2
   m_SampleRate: 20
   m_WrapMode: 0
   m_Bounds:
@@ -158,6 +161,8 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - {fileID: 21300000, guid: 3b837b1f0420fe6458a5c6557b881eab, type: 3}
     - {fileID: 21300000, guid: a62c7dd9b938a0e448aec20c9aec461a, type: 3}
@@ -219,7 +224,7 @@ AnimationClip:
     - {fileID: 21300000, guid: 297a899feaecde24dac4d45232a46cfa, type: 3}
     - {fileID: 21300000, guid: a36a6ba92abeb7842b5b9e8d4fdda108, type: 3}
     - {fileID: 21300000, guid: b497af2185209314e835d3211753e2e4, type: 3}
-    - {fileID: 21300000, guid: 54782e4f62e2ceb42a9023dffb4da36b, type: 3}
+    - {fileID: 21300000, guid: a9918a9cd1d71d14c9755d09eff10411, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -244,5 +249,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_GenerateMotionCurves: 0
   m_Events: []

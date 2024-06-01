@@ -6,9 +6,10 @@ using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
-   
+    
     public float runSpeed = 40f;
     public UnityEvent AnimatePush;
+    public GameObject ResetPos;
     //private variables
     private float horizontalMove;
     private bool jump;
@@ -97,6 +98,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     
+    public void ResetPlayer()
+    {
+        TogglePlayerMovement(false);
+        gameObject.transform.position = ResetPos.transform.position;
+        TogglePlayerMovement(true);
+    }
 
     private void OnDisable()
     {

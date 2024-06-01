@@ -23,13 +23,14 @@ public class JournalUI : MonoBehaviour
         var numOfChoices = _journalLogs.Length;
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
-            _selectedIndex = (_selectedIndex + 1 + numOfChoices) % numOfChoices;
+            _selectedIndex = (_selectedIndex - 1 + numOfChoices) % numOfChoices;
+           
             SelectJournal();
         }
 
         if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            _selectedIndex = (_selectedIndex - 1 + numOfChoices) % numOfChoices;
+            _selectedIndex = (_selectedIndex + 1 + numOfChoices) % numOfChoices;
             SelectJournal();
         }
     }

@@ -7,9 +7,16 @@ public class Cain : MonoBehaviour
     public SpriteRenderer sprite;
     public Sprite OpenTab;
     public JournalLog journalLog;
+
+    [SerializeField] private bool testing;
     void Start()
     {
+        if (!testing)
         Events.Conversation.ConversationStateChange += OnConvoStateChange;
+        else
+        {
+            FindObjectOfType<JournalManager>().UnlockLog(journalLog);
+        }
     }
 
     // Update is called once per frame
@@ -22,8 +29,9 @@ public class Cain : MonoBehaviour
         }
         else
         {
-            FindObjectOfType<JournalManager>().UnlockLog(journalLog);
             Events.Conversation.ConversationStateChange -= OnConvoStateChange;
+            FindObjectOfType<JournalManager>().UnlockLog(journalLog);
+            
         }
             
     }
