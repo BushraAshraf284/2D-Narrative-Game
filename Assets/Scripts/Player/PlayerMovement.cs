@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
+    public GameObject PlayerPos;
     public float runSpeed = 40f;
     public UnityEvent AnimatePush;
     public GameObject ResetPos;
@@ -21,10 +21,14 @@ public class PlayerMovement : MonoBehaviour
     //Other References
     private CharacterController2D characterController;
     private Animator animator;
+   
     [SerializeField] private bool _canPlayerMove;
+
+   
 
     private void Awake()
     {
+        gameObject.transform.position = PlayerPos.transform.position;
         characterController = GetComponent<CharacterController2D>();
         animator = GetComponent<Animator>();
         _canPlayerMove = true;
@@ -38,7 +42,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void TogglePlayerMovement(bool canMove)
     {
+        
         _canPlayerMove = canMove;
+        
     }
 
     // Update is called once per frame
@@ -47,11 +53,14 @@ public class PlayerMovement : MonoBehaviour
 
         if (!_canPlayerMove)
         {
+          
             horizontalMove = 0f;
             animator.SetFloat("Speed", Math.Abs(horizontalMove));
             return;
         }
+       
         horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
+       
         animator.SetFloat("Speed", Math.Abs(horizontalMove));
         if (Input.GetButtonDown("Jump"))
         {
@@ -66,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
+   
 
     private void FixedUpdate()
     {

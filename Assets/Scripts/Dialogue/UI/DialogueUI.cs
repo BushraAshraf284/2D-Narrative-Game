@@ -1,5 +1,6 @@
 using DG.Tweening;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,9 +34,13 @@ public class DialogueUI : MonoBehaviour
         TalkerName.text = text;
     }
 
-    public void SetTalkerImage(Sprite sprite)
+    public void SetTalkerImage(Sprite sprite, bool hasSprite)
     {
-        TalkerImage.sprite = sprite;
+        if (!hasSprite)
+            TalkerImage.gameObject.SetActive(false);
+        else
+            TalkerImage.sprite = sprite;
+      
     }
 
     public void SetIfTalkingIsUs(bool isTalkingUs)

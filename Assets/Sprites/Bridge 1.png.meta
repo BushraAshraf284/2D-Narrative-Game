@@ -144,7 +144,7 @@ TextureImporter:
         width: 334
         height: 915
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,13 +161,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 796
-        y: 83
+        y: 87
         width: 333
         height: 915
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -156.5, y: -454.5}
+        - {x: -166.5, y: 457.5}
+        - {x: 166.5, y: 456.5}
+        - {x: 166.5, y: -457.5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -186,7 +190,7 @@ TextureImporter:
         width: 341
         height: 915
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,6 +198,69 @@ TextureImporter:
       bones: []
       spriteID: baf51ebf7536e6e4b913c1d058064442
       internalID: -753920094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bridge 1_3
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 87
+        width: 333
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003e289eda892d84da6db7cdc7dcda13
+      internalID: -1886692376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bridge 1_4
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 87
+        width: 333
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f477dee6d1cbd9544b667c9dcef3e9bd
+      internalID: -791961626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bridge 1_5
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 491
+        width: 333
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d3f60bb981a074e87ea1a72e488adf
+      internalID: 1798823066
       vertices: []
       indices: 
       edges: []
@@ -212,6 +279,9 @@ TextureImporter:
       Bridge 1_0: 191633652
       Bridge 1_1: -1578020735
       Bridge 1_2: -753920094
+      Bridge 1_3: -1886692376
+      Bridge 1_4: -791961626
+      Bridge 1_5: 1798823066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

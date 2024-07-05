@@ -100,6 +100,7 @@ public class KeypadManager : Triggerable
             await UniTask.WaitForSeconds(blinkWait);
         }
         await UniTask.WaitForSeconds(initialWait);
+        KeypadUI.gameObject.SetActive(false);
         Events.Keypad.CorrectKeyPressed?.Invoke();
     }
 

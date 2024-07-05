@@ -109,20 +109,21 @@ public class ConversationManager : MonoBehaviour
         ConversationLoop();
     }
 
-    private void AssignDialogue(Dialogue dialogue)
+    public void AssignDialogue(Dialogue dialogue)
     {
         DialogueUI.SetDialogueText(dialogue.DialogueText);
-        DialogueUI.SetTalkerImage(dialogue.Talker.CharacterSprite);
+
+        DialogueUI.SetTalkerImage( dialogue.Talker.CharacterSprite, (dialogue.Talker.CharacterSprite != null));
         DialogueUI.SetTalkerName(dialogue.Talker.CharacterName);
         DialogueUI.SetIfTalkingIsUs(dialogue.Talker==CharacterTalker);
     }
 
-    private void OpenDialogueUI()
+    public void OpenDialogueUI()
     {
         DialogueUI.Open();
     }
 
-    private void CloseDialogueUI()
+    public void CloseDialogueUI()
     {
         DialogueUI.Close();
         Events.Player.TogglePlayerMovement?.Invoke(true);

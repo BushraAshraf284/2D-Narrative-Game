@@ -12,10 +12,15 @@ public class Interactable : MonoBehaviour
     public UnityEvent interactAction;
     public UnityEvent resetInteractAction;
     public GameObject InteractSign;
+    public AudioSource InteractAudio;
     private Vector2 relativePoint;
     private Transform player;
     bool Interacted = false;
 
+    private void Awake()
+    {
+        InteractAudio = GetComponent<AudioSource>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -48,6 +53,7 @@ public class Interactable : MonoBehaviour
     {
         InteractSign.SetActive(false);
         Interacted = true;
+        InteractAudio?.Play();
         interactAction.Invoke();
     }
 

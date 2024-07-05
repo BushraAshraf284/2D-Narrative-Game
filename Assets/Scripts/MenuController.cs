@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +13,11 @@ public class MenuController : MonoBehaviour
     [Header("Buttons")]
     public List<VFXButton> Buttons;
 
+    [Header("SFX")]
+    public AudioMixer audioMixer;
+    public UnityEngine.UI.Slider SFXslider;
+    public UnityEngine.UI.Slider BgMusic;
+
     [SerializeField] ParticleSystem _particleSystem;
     private bool buttonPressed = false;
 
@@ -19,7 +25,8 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
-        for(int i = 0; i < Buttons.Count; i++)
+        //SFXslider.onValueChanged
+        for (int i = 0; i < Buttons.Count; i++)
         {
             int val = i;
             Debug.Log(Buttons[i].Type.ToString() + Buttons[i].btn);
@@ -79,8 +86,17 @@ public class MenuController : MonoBehaviour
         currentButton = null;
     }
 
-
+    public void SetMusicSettings()
+    {
+        audioMixer.SetFloat("BGMusic", BgMusic.value);
+    }
+    public void SetSFXSettings()
+    {
+        audioMixer.SetFloat("SFXMusic", SFXslider.value);
+    }
 }
+
+
 
 [Serializable]
 public class VFXButton

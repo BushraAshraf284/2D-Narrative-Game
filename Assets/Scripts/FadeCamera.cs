@@ -9,6 +9,7 @@ public class FadeCamera : MonoBehaviour
 
     private void Start()
     {
+        FadeEffect.gameObject.SetActive(true);
         FadeOut(3);
     }
     public void FadeIn(float duration, UnityAction afterFade)
@@ -19,6 +20,6 @@ public class FadeCamera : MonoBehaviour
 
     public void FadeOut(int duration)
     {
-        FadeEffect.DOFade(0, duration);
+        FadeEffect.DOFade(0, duration).OnComplete(() => FadeEffect.gameObject.SetActive(false));
     }
 }
